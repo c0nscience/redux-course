@@ -1,6 +1,6 @@
 import React from 'react'
-import {connect} from 'react-redux'
-import {updateCurrent} from '../reducers/todo'
+import { connect } from 'react-redux'
+import { updateCurrent } from '../reducers/todo'
 
 const TodoForm = (props) => {
   const {currentTodo, updateCurrent} = props
@@ -11,8 +11,8 @@ const TodoForm = (props) => {
   return (
     <form>
       <input type="text"
-      value={currentTodo}
-      onChange={handleInputChange}
+             value={currentTodo}
+             onChange={handleInputChange}
       />
     </form>
   )
